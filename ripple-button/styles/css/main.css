@@ -2,7 +2,8 @@
 body,
 html {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background: #777; }
 
 .container {
   width: 90%;
@@ -14,18 +15,26 @@ html {
   .container .button {
     width: 261px;
     height: 61px;
-    background-color: #0ff;
+    background-color: #13bdbd;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
     color: #fff;
     font-size: 1.5rem;
     cursor: pointer; }
 
 .ripple-it {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .ripple-it .ripple {
-    position: absolute; }
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 0.7s linear;
+    background: rgba(255, 255, 255, 0.5); }
+
+@keyframes ripple {
+  to {
+    transform: scale(2.5); } }
 
 /*# sourceMappingURL=main.css.map */
