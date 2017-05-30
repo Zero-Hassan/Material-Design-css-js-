@@ -1,0 +1,18 @@
+{
+  "name": "ripple-button",
+  "version": "0.0.1",
+  "description": "recreate the ripple efect in a button",
+  "main": "server.js",
+  "scripts": {
+    "watch:sass":"sass --watch styles/sass:styles/css",
+    "serv":"node server.js",
+    "sync":"browser-sync start --server --files 'styles/css/*.css' 'index.html' 'js/*.js'",
+    "dev":"parallelshell 'npm run sync' 'npm run watch:sass'"
+  },
+  "author": "Hassan Zerouali",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "parallelshell": "^2.0.0"
+  }
+}

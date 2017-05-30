@@ -1,0 +1,31 @@
+*,
+body,
+html {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 161px; }
+  .container .button {
+    width: 261px;
+    height: 61px;
+    background-color: #0ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer; }
+
+.ripple-it {
+  position: relative; }
+  .ripple-it .ripple {
+    position: absolute; }
+
+/*# sourceMappingURL=main.css.map */
