@@ -1,43 +1,4 @@
-*,
-body,
-html {
-    margin: 0;
-    padding: 0;
-    background: #777;
-}
+@import 'view';
+@import 'ripple-button';
 
-.container {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 161px;
-    .button {
-        width: 261px;
-        height: 61px;
-        background-color: #13bdbd;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-        font-size: 1.5rem;
-        cursor: pointer;
-    }
-}
-.ripple-it{
-    position: relative;
-    overflow: hidden;
- .ripple{
-     position: absolute;
-     border-radius:50%; 
-     transform: scale(0);
-     animation: ripple 0.7s linear;
-     background: rgba(255,255,255,0.5);
- }
-}
-@keyframes ripple{
-    to{
-        transform: scale(2.5),
-    }
-}
+

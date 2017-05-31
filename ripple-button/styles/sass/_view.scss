@@ -1,0 +1,34 @@
+*,
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background: #f2f2f2;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 61px;
+   // background: #fff;
+    height:91px;
+    .button {
+        width: 261px;
+        height: 61px;
+        background-color: #13bdbd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+        &.flat{
+            background: inherit;
+            color:#444;
+            font-weight: bold;
+        }
+    }
+}
